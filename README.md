@@ -1,7 +1,7 @@
 ## spring-boot-mapstruct-convert-entity-to-dto
 
-Purpose : Integrate mapstruct into Spring controller layer methods. <br/>
-Reason : Use mapstruct to convert entities to dto. <br/>
+Purpose : Integrate generated mapstruct mapper class into Spring controller layer methods. <br/>
+Reason : Use mapstruct to convert jpa entity to dto types. <br/>
 
 ### Local run steps <br/>
 1- Add mapstruct dependencies into pom.xml. </br>
