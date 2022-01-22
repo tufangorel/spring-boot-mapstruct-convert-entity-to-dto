@@ -1,0 +1,1 @@
+# spring-boot-mapstruct-convert-entity-to-dto
