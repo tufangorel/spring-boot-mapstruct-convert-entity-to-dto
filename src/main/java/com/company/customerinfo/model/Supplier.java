@@ -14,7 +14,7 @@ import java.util.Objects;
 public class Supplier {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "supplier_id")
     private int supplierId;
 

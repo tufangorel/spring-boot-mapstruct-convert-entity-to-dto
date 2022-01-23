@@ -16,7 +16,7 @@ import java.util.Set;
 public class Store implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "store_id")
     private Integer id;
 
