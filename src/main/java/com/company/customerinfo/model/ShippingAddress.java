@@ -18,7 +18,7 @@ import java.util.Objects;
 public class ShippingAddress implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
     @JsonBackReference
@@ -26,7 +26,7 @@ public class ShippingAddress implements Serializable {
     private Customer customer;
 
     @JsonManagedReference
-    @JoinColumn(name = "fk_address_id")
+    @JoinColumn(name = "fk_address_id", insertable = false, updatable = false)
     @OneToOne(cascade=CascadeType.ALL)
     private Address address;
 
