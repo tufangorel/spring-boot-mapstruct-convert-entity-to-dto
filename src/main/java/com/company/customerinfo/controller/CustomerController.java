@@ -53,7 +53,7 @@ public class CustomerController {
     })
     @GetMapping(value = "/list", produces = "application/json")
     public Iterable<CustomerDTO> list(){
-        Iterable<Customer> customers = customerService.findAll();
+        Iterable<Customer> customers = customerService.findAllByJPARepository();
         Iterable<CustomerDTO> customerAllDtos = customerMapper.customersToCustomerAllDtos(customers);
         return customerAllDtos;
     }

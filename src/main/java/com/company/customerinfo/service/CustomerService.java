@@ -60,6 +60,11 @@ public class CustomerService {
         return (List<Customer>) result;
     }
 
+    public List<Customer> findAllByJPARepository(){
+        Iterable<Customer> result = customerRepository.findAll();
+        return (List<Customer>) result;
+    }
+
     @Transactional
     public void deleteCustomer(Integer id) {
         customerRepository.deleteById(id);
