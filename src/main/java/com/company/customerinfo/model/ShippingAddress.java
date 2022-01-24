@@ -26,7 +26,7 @@ public class ShippingAddress implements Serializable {
     private Customer customer;
 
     @JsonManagedReference
-    @JoinColumn(name = "fk_address_id", insertable = false, updatable = false)
+    @JoinColumn(name = "fk_address_id")
     @OneToOne(cascade=CascadeType.ALL)
     private Address address;
 
